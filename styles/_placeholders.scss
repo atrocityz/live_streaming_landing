@@ -1,4 +1,5 @@
 @use "variables" as v;
+@use "mixins" as m;
 @use "sass:color";
 
 %hover-black {
@@ -45,4 +46,23 @@
   width: 36px;
   height: 23px;
   fill: v.$color_white;
+}
+
+%cloud-template {
+  width: 700px;
+  height: 240px;
+  background: url("../assets/img/cloud_alpha.png") center/contain no-repeat;
+}
+
+%input-template {
+  width: 100%;
+  height: 47px;
+  border-radius: 20px;
+  border: 1px solid v.$color_gray;
+  padding: 0 1em;
+  @include m.font(25px, 300, v.$color_black);
+
+  &::placeholder {
+    @include m.font(25px, 100, v.$color_gray);
+  }
 }
