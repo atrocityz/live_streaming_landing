@@ -193,7 +193,7 @@
       @include m.position(absolute, 1, -1, bottom, left, 100px, 10px);
     }
     @media (max-width: v.$media_sm) {
-      @include m.position(absolute, 1, -1, bottom, left, 250px, 5px);
+      @include m.position(absolute, 1, -1, bottom, left, 220px, 5px);
     }
   }
 
