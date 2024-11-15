@@ -1,3 +1,5 @@
+@use "variables" as v;
+
 * {
   box-sizing: border-box;
 }
@@ -37,6 +39,11 @@ blockquote {
 hr {
   margin: 0;
   width: 100%;
+  color: v.$color_white;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .container {

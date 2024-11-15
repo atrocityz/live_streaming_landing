@@ -49,6 +49,33 @@
     </div>
   </header>
 
+  <div class="mobile-nav" aria-label="mobile navigation">
+    <label for="checkboxID" class="mobile-nav__burger">
+      <svg class="mobile-nav__burger-icon" aria-label="burger icon">
+        <use href="assets/sprites.svg#burger-icon"></use>
+      </svg>
+    </label>
+
+    <input type="checkbox" name="toggler" id="checkboxID" class="mobile-nav__toggler">
+
+    <nav class="mob-nav__menu nav">
+      <ul class="nav__list">
+        <li class="nav__list-item"><a class="nav__list-item_link" href="#work">How we work</a></li>
+        <li class="nav__list-item"><a class="nav__list-item_link" href="#about">About us</a></li>
+        <li class="nav__list-item"><a class="nav__list-item_link" href="#experience">Our experience</a></li>
+        <li class="nav__list-item"><a class="nav__list-item_link" href="#testimonials">Testimonials</a></li>
+        <li class="nav__list-item"><a class="nav__list-item_link" href="#formSection">Form</a></li>
+        <li class="nav__list-item"><a class="nav__list-item_link" href="#contacts">Contacts</a></li>
+      </ul>
+
+      <label for="checkboxID" class="nav__close">
+        <svg class="nav__close-icon" aria-label="cross icon">
+          <use href="assets/sprites.svg#cross-icon"></use>
+        </svg>
+      </label>
+    </nav>
+  </div>
+
   <main aria-label="main content">
     <section class="hero-section" aria-label="hero section">
       <div class="container">
@@ -74,7 +101,7 @@
       </div>
     </section>
 
-    <section class="work-section" aria-label="work section">
+    <section class="work-section" id="work" aria-label="work section">
       <div class="container">
         <div class="work">
           <h2 class="work__title">How we work</h2>
@@ -138,7 +165,7 @@
 
     <hr class="divider">
 
-    <section class="about-section" aria-label="about section">
+    <section class="about-section" id="about" aria-label="about section">
       <div class="container">
         <div class="about">
           <div class="about__quality" aria-label="about content">
@@ -171,7 +198,7 @@
     </section>
     <hr class="divider">
 
-    <section class="experience-section" aria-label="experience section">
+    <section class="experience-section" id="experience" aria-label="experience section">
       <div class="container">
         <div class="experience">
           <h2 class="experience__title">Our experience</h2>
@@ -213,7 +240,7 @@
       </div>
     </section>
 
-    <section class="testimonials-section" aria-label="testimonials section">
+    <section class="testimonials-section" id="testimonials" aria-label="testimonials section">
       <div class="container">
         <div class="testimonials">
           <h2 class="testimonials__title">Testimonials</h2>
@@ -254,7 +281,7 @@
       </div>
     </section>
 
-    <section class="form-section" aria-label="form section">
+    <section class="form-section" id="formSection" aria-label="form section">
       <div class="container">
         <div class="form-section__wrapper">
           <form action="mailto:streaming@mail.ru" class="form" aria-labelledby="form-title">
@@ -275,7 +302,7 @@
     </section>
   </main>
 
-  <footer class="footer-section" aria-label="contacts section">
+  <footer class="footer-section" id="contacts" aria-label="contacts section">
     <div class="container">
       <div class="footer">
         <div class="footer__terms">
